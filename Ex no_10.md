@@ -1,42 +1,39 @@
-# EX 10 C program to find the factorial of a given number using a function with arguments and return type.
+# EX 10 Write a c program to find the sum of even digits using  do-while loop 
 ## DATE:
 ## AIM:
-To write a C program to find the factorial of a given number using a function with arguments and return type.
-
+To write a C program to find the sum of even digits using  do-while loop .
 ## Algorithm
 1.Start.
-2.Declare the variables.
-3.Prompt the user to enter a value.
-4.Read the value using scanf.
-5.Enter factorial of the number.
-6.End.
-Program:
+2.Declare variables a, sum = 0, and i = 1.
+3.Read the value of a.
+4.Repeat while i <= a:
+5.If i is even (i % 2 == 0):
+6.Add i to sum.
+7.Increment i by 1.
+8.Display the value of sum.
+9.Stop.
+## Program:
 ```
-/*
-Program to find the factorial of a given number using a function with arguments and return type.
-Developed by:Logapoorani R
-RegisterNumber: 212223060136
-*/
-#include <stdio.h> 
-int main() { 
-    int n, i; 
-    unsigned long long factorial = 1; 
-    scanf("%d", &n); 
- 
-    if (n < 0) { 
-        printf("Factorial is not defined for negative numbers.\n"); 
-    } else { 
-        for (i = 1; i <= n; i++) { 
-            factorial *= i; 
-        } 
-        printf("Factorial of %d = %llu\n", n, factorial); 
-    } 
-    return 0; 
+#include<stdio.h>
+int main()
+{
+    int a,sum=0;
+    scanf("%d",&a);
+    int i=1;
+    while(i<=a)
+    {
+        if(i%2==0)
+        {sum=sum+i;i++;}
+        else
+        i++;
+    }
+    printf("%d",sum);
 }
 ```
 
 ## Output:
-<img width="518" height="199" alt="image" src="https://github.com/user-attachments/assets/9773b843-3d92-4930-9461-984a585564de" />
+<img width="714" height="398" alt="Screenshot 2026-06-08 140527" src="https://github.com/user-attachments/assets/e76defab-cf22-46c6-aa2d-001e202772d4" />
+
 
 
 
